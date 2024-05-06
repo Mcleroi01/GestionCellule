@@ -56,8 +56,9 @@ class NavigationPage extends StatelessWidget {
                   color: const Color.fromARGB(255, 236, 245, 252),
                   borderRadius: BorderRadius.circular(10)),
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(20),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Row(
                       children: [
@@ -75,11 +76,11 @@ class NavigationPage extends StatelessWidget {
                       ('L’Éternel est un refuge pour l’opprimé, Un refuge au temps de la détresse. Ceux qui connaissent ton nom se confient en toi. Car tu n’abandonnes pas ceux qui te cherchent, ô Éternel !'),
                       style: TextStyle(
                           fontSize: 12,
-                          fontWeight: FontWeight.w100,
-                          color: Color.fromARGB(164, 0, 0, 0)),
+                          fontWeight: FontWeight.normal,
+                          color: Color.fromARGB(255, 0, 0, 0)),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
                     Row(
                       children: [
@@ -115,11 +116,7 @@ class NavigationPage extends StatelessWidget {
         padding: EdgeInsets.all(20),
         tabMargin: EdgeInsets.only(bottom: 20, left: 2, right: 2),
         backgroundColor: Colors.white,
-        tabActiveBorder: Border(
-            bottom: BorderSide(
-                width: 1,
-                style: BorderStyle.solid,
-                color: const Color(0xFF0077FF))),
+       
         tabBorderRadius: 0,
         tabs: [
           GButton(
@@ -160,7 +157,7 @@ class NavigationPage extends StatelessWidget {
             ),
             Text(
               'Bienvenue',
-              style: TextStyle(fontSize: 27, color: Colors.white),
+              style: TextStyle(fontSize: 27, color: Colors.white,fontWeight: FontWeight.bold),
             )
           ],
         ),

@@ -46,7 +46,7 @@ class CelluleListePage extends StatelessWidget {
                       children: [
                         Text(
                           "Cellule Ngaba",
-                          style: TextStyle(fontFamily: 'Arial', fontSize: 23),
+                          style: TextStyle(fontFamily: 'Arial', fontSize: 23,fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -87,21 +87,22 @@ class CelluleListePage extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 0.0),
+                  padding: const EdgeInsets.only(left: 0.0,bottom: 20),
                   child: Text(
-                    "Description",
+                    "Développeur, orange digital center",
                     style: TextStyle(
                         fontSize: 16,
-                        color: Color.fromARGB(255, 0, 0, 0),
+                        color: Colors.grey,
                         fontWeight: FontWeight.w400),
                   ),
                 ),
+
                 Text(
                   ("Une église (avec un é minuscule) = un édifice où les chrétiens célèbrent leur culte. Une église romane, gothique ; aller à l'église. Église désigne le plus souvent un édifice consacré au culte catholique romain ou à un culte chrétien de rite oriental..."),
                   style: TextStyle(
-                      fontSize: 10,
-                      fontWeight: FontWeight.w100,
-                      color: Color.fromARGB(164, 0, 0, 0)),
+                      fontSize: 12,
+                      fontWeight: FontWeight.w400,
+                      color: Color.fromARGB(255, 0, 0, 0)),
                 ),
                 SizedBox(
                   height: 10,
@@ -110,18 +111,18 @@ class CelluleListePage extends StatelessWidget {
                   'Lire plus',
                   style: TextStyle(color: Colors.blue),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(20),
-                  child: Container(
-                    child: GoogleMap(
-                      onMapCreated: _onMapCreated,
-                      initialCameraPosition: CameraPosition(
-                        target: _center,
-                        zoom: 11.0,
-                      ),
-                    ),
-                  ),
-                ),
+                // Padding(
+                //   padding: const EdgeInsets.all(20),
+                //   child: Container(
+                //     child: GoogleMap(
+                //       onMapCreated: _onMapCreated,
+                //       initialCameraPosition: CameraPosition(
+                //         target: _center,
+                //         zoom: 11.0,
+                //       ),
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           )),
